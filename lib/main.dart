@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Franklin Material'),
+          title: const Text('Franklin Material'),
           backgroundColor: Colors.cyan[300],
         ),
-        body: Text('Etiqueta Body'),
+        body: const Text('Etiqueta Body'),
         backgroundColor: Color.fromARGB(255, 244, 205, 255),
         bottomNavigationBar: BottomNavigationBar(
-          items: [
+          items: const [
             BottomNavigationBarItem(
               label: 'Home',
               icon: Icon(Icons.home),
