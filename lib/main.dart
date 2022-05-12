@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Franklin Material'),
         ),
+        body: Text('Etiqueta Body'),
       ),
     );
   }
