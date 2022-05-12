@@ -13,11 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Franklin Material'),
-        ),
-        body: Text('Etiqueta Body'),
-      ),
+          appBar: AppBar(
+            title: Text('Franklin Material'),
+            backgroundColor: Colors.cyan[300],
+          ),
+          body: Text('Etiqueta Body'),
+          backgroundColor: Color.fromARGB(255, 244, 205, 255)),
     );
   }
 }
