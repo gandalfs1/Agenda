@@ -13,12 +13,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('Franklin Material'),
-            backgroundColor: Colors.cyan[300],
-          ),
-          body: Text('Etiqueta Body'),
-          backgroundColor: Color.fromARGB(255, 244, 205, 255)),
+        appBar: AppBar(
+          title: Text('Franklin Material'),
+          backgroundColor: Colors.cyan[300],
+        ),
+        body: Text('Etiqueta Body'),
+        backgroundColor: Color.fromARGB(255, 244, 205, 255),
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.home),
+            ),
+            BottomNavigationBarItem(
+              label: 'Settings',
+              icon: Icon(Icons.settings),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
